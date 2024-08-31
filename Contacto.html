@@ -16,7 +16,7 @@
         <ul>
           <li>
             
-            <form action="index.html" method="get">
+            <form action="index.html" method="get" enctype="multipart/form-data">
               <div>
               <label for> Nombre </label>
               <input
@@ -24,7 +24,8 @@
                 name="Nombre"
                 placeholder="Ingrese su nombre"
                 required
-                id="Nombre">
+                id="Nombre"
+                autocomplete="on">
               </div>
              
 
@@ -65,6 +66,31 @@
               <div>
               <label for "Otro">Otro</label> 
               <input type="radio" name="genero" id="Otro">
+              </div>
+
+              <div>
+                <h2>Lista de Seleccion</h2>
+                 <select name = "Ciudad" id= "lang">
+                    <label for="Ciudad">Ciudad</label>
+                      <option value="Bucarmanga" >Bucaramanga </option>
+                      <option value="Bogota" >Bogota </option>
+                      <option value="Medellin" >Medellin </option>
+                      <option value="Cali" > Cali</option>
+                      <option value="Barranquilla" > Barranquilla</option>
+
+                </select>
+              </div>
+
+              <div>
+                <input type="date"> 
+              </div>
+
+              <div>
+                <input type="file" name="file" id="file"> 
+              </div>
+
+              <div>
+                <textarea name="mensaje" id "mensaje" rows="6"></textarea>
               </div>
 
               <button>Enviar</button>
